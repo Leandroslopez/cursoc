@@ -14,14 +14,14 @@ int main(){
     printf("Informe o valor do deposito: R$ ");
     scanf("%f", &dep);
     printf("Informe o prazo da aplicacao, em meses: ");
-    scanf("%i", &prazo);
+    scanf("%d", &prazo);
     printf("Informe a taxa de juros mensal: ");
     scanf("%f", &tx);
 
     vr = (dep * (tx / 100)) * prazo;
     vt = dep + vr;
 
-    printf("Em %i meses seus R$ %.2f iniciais renderam um total de R$ %.2f.\nO saldo total depois do rendimento e de R$ %.2f. ", prazo, dep, vr, vt);
+    printf("Em %d meses seus R$ %.2f iniciais renderam um total de R$ %.2f.\nO saldo total depois do rendimento e de R$ %.2f. ", prazo, dep, vr, vt);
 
 
     return 0;
